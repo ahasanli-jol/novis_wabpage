@@ -1,0 +1,78 @@
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  grid-template-areas:
+    "balance distribution"
+    "history history";
+  width: 100%;
+}
+
+.area-balance {
+  grid-area: balance;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.area-distribution {
+  grid-area: distribution;
+}
+
+.area-history {
+  grid-area: history;
+  /* text-shadow: #000000 0px 0px 3px; */
+}
+
+/* Style spécifique pour le solde */
+.balance-value {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.balance-label {
+  opacity: 0.7;
+  font-size: 1.1em;
+}
+
+/* Style simple pour la barre de distribution (alternative CSS au camembert) */
+.distribution-bar {
+  display: flex;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.segment-crypto {
+  width: 60%;
+  background-color: #4ade80; /* Vert */
+}
+
+.segment-stocks {
+  width: 25%;
+  background-color: #f87171; /* Rouge/Rose */
+}
+
+.segment-cash {
+  width: 15%;
+  background-color: #60a5fa; /* Bleu */
+}
+
+.legend {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}

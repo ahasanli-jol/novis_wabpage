@@ -1,0 +1,123 @@
+@import url("layout/header.css");
+@import url("layout/footer.css");
+@import url("layout/dashboard.css");
+@import url("components/buttons.css");
+@import url("components/cards.css");
+@import url("components/tables.css");
+
+:root {
+  --text-main: #ffffff;
+  --dark-amethyst: #10002bff;
+  --dark-amethyst-2: #240046ff;
+  --indigo-ink: #3c096cff;
+  --indigo-velvet: #5a189aff;
+  --royal-violet: #7b2cbfff;
+  --lavender-purple: #9d4eddff;
+  --mauve-magic: #c77dffff;
+  --mauve: #e0aaffff;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh; /* Assure que le body prend au moins toute la hauteur */
+  font-family: "Advent Pro", sans-serif;
+  background-color: rgb(
+    220,
+    174,
+    247
+  ); /* La couleur de fin (ligne 23) pour le reste de la page */
+  background-image: linear-gradient(
+    180deg,
+    rgba(16, 0, 43, 1) 0%,
+    rgba(60, 9, 108, 1) 37%,
+    rgba(90, 24, 154, 1) 68%,
+    rgba(224, 170, 255, 1) 100%
+  );
+  background-repeat: no-repeat; /* Empêche le gradient de se répéter */
+  color: var(--text-main);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* Espace entre Hero et Market */
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  min-height: 60vh;
+
+  .hero-grid {
+    display: grid;
+    gap: 30px;
+    align-items: center;
+
+    span {
+      font-size: 1.5em;
+      /* color: #e0e0e0; */
+      background-color: #bf98e434;
+      padding: 8px 16px;
+      border-radius: 25px;
+
+      svg {
+        height: 30px;
+        width: auto;
+        vertical-align: middle;
+        margin-right: 10px;
+        fill: white;
+      }
+    }
+  }
+}
+
+.hero-text {
+  flex: 1;
+
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    line-height: 1;
+
+    img {
+      height: 80px;
+      width: auto;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+    max-width: 500px;
+    line-height: 1.6;
+  }
+}
+
+.hero-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  perspective: 1000px; /* Effet de profondeur pour la 3D si besoin */
+}
+
+/* --- Market Section --- */
+.market-section {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+}

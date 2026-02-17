@@ -1,0 +1,60 @@
+.asset-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  color: var(--text-main);
+  font-family: "Advent Pro", sans-serif;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  overflow: hidden; /* Pour que le border-radius s'applique aux coins du tableau */
+}
+
+.asset-table thead {
+  background: rgba(255, 255, 255, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.asset-table th,
+.asset-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.asset-table th {
+  font-weight: 600;
+
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.asset-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05); /* Effet survol ligne */
+}
+
+.asset-table tfoot {
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.asset-table tfoot td {
+  border-bottom: none;
+}
+
+/* Classes utilitaires pour les variations */
+.text-green {
+  font-weight: bold;
+  justify-items: center;
+  color: #359b5a; /* Vert lumineux */
+}
+
+.text-red {
+  font-weight: bold;
+  color: #f87171; /* Rouge doux */
+}
+
+.text-type {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}

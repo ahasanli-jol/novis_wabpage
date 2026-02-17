@@ -1,0 +1,31 @@
+header {
+  background-color: var(--indigo-ink);
+  text-align: center;
+  border-radius: 30px;
+  height: 60px; /* Un peu plus haut pour l'aération */
+  margin: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 20px;
+
+  img {
+    height: 40px;
+    position: absolute;
+    left: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+
+  /* Le style des boutons est maintenant dans buttons.css */
+
+  #profile-button {
+    position: absolute;
+    right: 20px;
+  }
+}
