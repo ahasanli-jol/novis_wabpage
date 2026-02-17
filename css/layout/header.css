@@ -2,14 +2,16 @@ header {
   background-color: var(--indigo-ink);
   text-align: center;
   border-radius: 30px;
-  height: 60px; /* Un peu plus haut pour l'aération */
-  margin: 20px;
+  height: 60px; 
+  /* margin: 20px; */
 
   display: flex;
   justify-content: center;
+  width: 100%;
   align-items: center;
-  position: relative;
-  padding: 0 20px;
+  /* position: relative; */
+  position: fixed;
+  /* padding: 0 20px; */
 
   img {
     height: 40px;
@@ -25,7 +27,7 @@ header {
   /* Le style des boutons est maintenant dans buttons.css */
 
   #profile-button {
-    position: absolute;
-    right: 20px;
+    position: end;
+    /* right: 20px; */
   }
 }
